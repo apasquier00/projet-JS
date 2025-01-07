@@ -1,3 +1,6 @@
 console.log("exo-7");
 
-console.log(jsonDatas);
+
+for (let i = 0; i < jsonDatas.length;i++){
+    console.log(jsonDatas[i]);
+}

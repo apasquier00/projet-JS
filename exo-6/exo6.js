@@ -51,6 +51,11 @@ for(var i = 0; i < team.games.length; i++){
 }
 console.log("Somme des point de l'équipe : " + sumOfTeamPoints);
 
+let sumOfTeamPoints2 = 0;
+sumOfTeamPoints2 = team.games.teamPoints.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue,);
+
+console.log("Somme des point de l'équipe Version 2 " + sumOfTeamPoints2);
+
 
 //calcule des point moyens 
 let avgOppsPoints = 0;
