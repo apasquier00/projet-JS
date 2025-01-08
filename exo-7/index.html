@@ -8,7 +8,44 @@
   <body>
     <div class="container">
 						<h1>Exercice 7</h1>
-				</div>
+		</div>
+    <div id="main">
+      <ul id ="listElement">
+
+      </ul>
+      <input type="text" id="typeHTML" minlength="4" maxlength="8" size="10" >
+      <input type="button" id="btnResearch" value="Rechercher" onClick="buttonList()">
+      <input type="button" id="btnSort" value="Trier par :" onClick="buttonSort()">
+      <select name="sortOption" id="sortOption">
+        <option>prix croissant</option>
+        <option>prix décroissant</option>
+        <option>nom</option>
+      </select>
+      <h1>
+        Merci de cocher les articles hors de stock
+      </h1>
+      <div id="checkStocks"></div>
+
+    </div>
+    <div>
+      <h1> Ajout d'un nouvel article </h1>
+      <label for="txtName">Nom :</label>
+      <input type="text" id="txtName" name="txtName">
+
+      <label for="txtType">Type :</label>
+      <input type="text" id="txtType" name="txtType">
+
+      <label for="txtDescription">Description :</label>
+      <input type="text" id="txtDescription" name="txtDescription">
+
+      <label for="txtPrice">Prix :</label>
+      <input type="text" id="txtPrice" name="txtPrice">
+
+      <label for="txtStock">Quantité :</label>
+      <input type="text" id="txtStock" name="txtStock">
+      </br>
+      <input type="button" Value="Ajouter" onClick="addArticle()" id="btnAdd" name="btnAdd">
+    </div>
     <script src="datas.js"></script>
     <script src="exo7.js"></script>
   </body>
